@@ -43,6 +43,11 @@ p {
   margin: 0 2% 20px;
 }
 
+@media (min-width: 360px) {
+.container {
+  width: 342px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
