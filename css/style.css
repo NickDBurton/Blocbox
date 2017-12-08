@@ -194,6 +194,7 @@ header .hero img {
   margin-top: 0px;
 }
 .box h3 {
+  letter-spacing: .10em;
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
