@@ -10,14 +10,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 5px;
   text-align: center;
 }
 p {
   font-size: 16px;
   line-height: 19px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -74,6 +74,7 @@ header nav ul > li.btn-outline:hover {
 }
 header nav ul > li > a {
   color: #2F3455;
+  font-weight: 500;
   text-decoration: none;
 }
 header nav ul > li.btn-outline:hover > a {
@@ -86,13 +87,13 @@ header .hero {
 }
 header .hero h1 {
   font-size: 52px;
-  font-weight: normal;
+  font-weight: 300;
   margin: 95px 0 0;
 }
 header .hero p {
   font-size: 24px;
   line-height: 28px;
-  font-weight: normal;
+  font-weight: 300;
   margin: 10px 0 40px;
 }
 header .hero img {
@@ -107,7 +108,7 @@ header .hero img {
 .btn {
   border-radius: 4px;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   padding: 10px 30px;
   background: #EA4B6B;
@@ -136,6 +137,7 @@ header .hero img {
   vertical-align: middle;
 }
 .benefits h2 {
+  font-weight: 500;
   color: #2F3455;
 }
 /* PRICING */
@@ -147,6 +149,7 @@ header .hero img {
   padding: 4em 0;
 }
 .pricing h2, .pricing p {
+  text-align: center;
   color: #2F3455;
 }
 .pricing: ul {
@@ -171,7 +174,7 @@ header .hero img {
 .box h3 {
   letter-spacing: .10em;
   font-family: "Rubik", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   background: #E9F0F4;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
@@ -195,7 +198,7 @@ header .hero img {
 .box h4 span.month {
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #E9F0F4;
+  color: #EA4B6B;
   font-size: 24px;
   vertical-align: middle;
 }
@@ -215,6 +218,7 @@ header .hero img {
   color: #2F3455;
   line-height: 12px;
   font-style: italic;
+  text-align: center;
 }
 
 /* TESTIMONIALS */
@@ -264,6 +268,7 @@ header .hero img {
   display: inline-block;
   text-align: left;
   font-size: 13px;
+  font-weight: 300;
   margin-top: 30px;
 }
 
@@ -309,13 +314,71 @@ footer .logo {
   background: #FBFBFB;
 }
 .left-nav {
-  height: 100vh;
-  width: 14.66666667%;
-  color: #2F3455;
+  height: 100%;
+  width: 280px;
+  color: #ffffff;
   background: #E9F0F4;
   float: left;
-  position: fixed;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  –moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px, 0);
+    -webkit-transform: translate(-280px, 0); /** Chrome & Safari **/
+    -o-transform: translate(-280px, 0); /** Opera **/
+    -moz-transform: translate(-280px, 0); /** Firefox **/
+}
+.left-nav.open {
   display: block;
+  width: 280px;
+  background: #E9F0F4;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transition: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;
+}
+.hamburger {
+  position: absolute;
+  z-index: 1000;
+  background: #E9F0F4;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  left: 5px;
+  top: 15px;
+}
+@media (min-width: 992px) {
+  .left-nav {
+    height: 100vh;
+    width: 14.66666667%;
+    color: #ffffff;
+    background: #E9F0F4;
+    float: left;
+    position: fixed;
+    display: block;
+    transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transition: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .left-nav.open {
+    width: 14.66666667%;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transition: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .hamburger {
+    display: none;
+  }
 }
 .left-nav .site-logo {
   padding: 20px 0;
@@ -327,7 +390,7 @@ footer .logo {
   padding: 0 6%;
 }
 .left-nav .items p {
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 16px;
   color: #2F3455;
   line-height: 30px;
@@ -376,7 +439,8 @@ footer .logo {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #2F3455;
   margin: 0 0 0 10px;
 }
 .left-nav .settings a {
@@ -439,7 +503,7 @@ footer .logo {
 }
 .item-box h2 {
   font-family: 'rubik', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   text-align: left;
@@ -466,6 +530,7 @@ footer .logo {
 
 @media (min-width: 360px) {
 .container {
+  text-align: center;
   width: 342px;
   }
 
