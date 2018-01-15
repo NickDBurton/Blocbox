@@ -20,6 +20,15 @@ p {
   font-weight: 300;
   text-align: center;
 }
+.pricing-containers .one-third ul {
+  padding: 0px;
+}
+.new-section {
+  padding-bottom: 60px;
+}
+.new-section .container p {
+  padding-bottom: 15px;
+}
 
 /* GRID */
 .container {
@@ -285,11 +294,14 @@ footer {
   overflow: hidden;
   z-index: 0;
 }
+footer nav ul {
+  padding: 0px;
+}
 footer p, footer nav ul {
   font-size: 12px;
   font-weight: 100;
   text-align: center;
-  margin: 20px auto 0;
+  line-height: 0px;
 }
 footer nav ul li {
   list-style-type: none;
@@ -617,13 +629,19 @@ footer .logo {
     width: 23%;
     margin: 0 1% 25px;
   }
-  footer{
+  footer {
     background-color: #E9F0F4;
     height: 100px;
   }
-  footer p, footer nav ul {
-    padding: 2em 0;
+  footer .left-footer-block,
+  footer .middle-footer-block {
+    padding-top: 62px;
+  }
+  footer p {
     text-align: left;
+  }
+  footer nav ul {
+    text-align: center;
   }
   footer .right-footer-block {
     background-color: #E9F0F4;
